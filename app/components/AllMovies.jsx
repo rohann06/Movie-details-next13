@@ -10,7 +10,7 @@ const AllMovies = ({ title, id, poster_path, release_date }) => {
     <div>
       <h1 className=" text-sm font-bold">{title}</h1>
       <h2 className=" text-sm">{release_date}</h2>
-      <Link href={`/asd`}>
+      <Link href={`/${id}`}>
         <img className=" rounded-xl" src={`https://image.tmdb.org/t/p/w500${poster_path}`} alt={title}  />
       </Link>
     </div>

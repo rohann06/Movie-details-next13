@@ -5,7 +5,7 @@ export default async function Home() {
     `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.NEXT_API_KEY}&language=en-US&page=1`
   );
   const movies = await data.json();
-  console.log(movies.results);
+  // console.log(movies.results);
 
   return (
     <main>
