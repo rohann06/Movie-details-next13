@@ -1,16 +1,16 @@
 import React from "react";
 
 
-// TO pre ramder the details
-export async function generateSraricParams() {
-  const data = await fetch(
-    `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.NEXT_API_KEY}&language=en-US&page=1`
-  );
-  const movies = await data.json();
-  return resizeBy.results.map((movie) => {
-    movie: toString(movie.id);
-  });
-}
+// // TO pre ramder the details
+// export async function generateSraricParams() {
+//   const data = await fetch(
+//     `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.NEXT_API_KEY}&language=en-US&page=1`
+//   );
+//   const movies = await data.json();
+//   return resizeBy.results.map((movie) => {
+//     movie: toString(movie.id);
+//   });
+// }
 
 const MovieDetails = async ({ params }) => {
   const { slug } = params;
